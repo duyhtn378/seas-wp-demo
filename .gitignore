@@ -3,3 +3,4 @@ wp-includes/
 node_modules/
 wp-content/uploads
 wp-content/themes/twenty*
+wp-config.php
