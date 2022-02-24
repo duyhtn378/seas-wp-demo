@@ -1,0 +1,218 @@
+/* === BODY SUPPORT === */
+body {
+  
+}
+
+.header .header-layout.active{}
+
+/* === HEADER === */
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: $white;
+  z-index: 10;
+  overflow: visible;
+
+  // Header Layout
+  .header-layout {
+    display: flex;
+    height: 97px;
+    justify-content: space-between;
+    align-items: center;
+
+    // Logo
+    .company-logo {
+    }
+
+    // Menu
+    .header-menu {
+      display: flex;
+      font-size: 13px;
+      list-style-type: none;
+      justify-content: space-between;
+      align-items: center;
+      padding:0;
+      color: $black;
+
+      .nav-item {
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 15px;    
+        a {
+          color: $black;
+          text-decoration: none;
+          
+          &:hover {
+            cursor: pointer;
+            color: $blue;
+            img {
+              transition: transform 0.2s ease;
+              &:hover {
+                transform: scale(1.2);
+              }
+            }
+          }
+        }
+        .active {
+          color: $blue !important;
+        }
+      }
+      .dropdown {
+        position: relative;
+        display: inline-block;
+        
+        &:hover .dropdown-content {
+          display: block;
+        }
+        &:hover .dropbtn {
+          background-color: #3e8e41;
+        }
+        .dropdown-content {
+          display: none;
+          position: absolute;
+          background-color: #fff;
+          min-width: 160px;
+          box-shadow: 0px 4px 12px rgba(0, 66, 101, 0.2);
+          z-index: 15;
+          a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            height: 35px;
+            &:hover {
+              background-color: $blue;
+              color: $white !important;
+            }
+          }
+        }
+      }
+    }
+    .header-tab-menu {
+      width: 740px;
+      padding-right: 100px;
+    }
+    .header-social-menu {
+      width: 329px;
+    }
+
+    //Social List
+    .header-social-network-list {
+      display: flex;
+
+      .social-item {
+        width: 24px;
+        height: 24px;
+        text-align: center;
+        line-height: 24px;
+        color: $white;
+        background-color: #babfbd;
+        border-radius: 50%;
+        margin-right: 12px;
+        font-size: 13px;
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
+
+.nav-mobile {
+  width: 28px;
+  height: 28px;
+  display: none;
+  &:hover {
+    cursor: pointer;
+  }
+}
+.nav-overlay {
+  position: fixed;
+  top: 97px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(0, 0, 0);
+  opacity: 0.3;
+  display: none;
+  z-index: 3;
+  animation: fadeIn linear 0.3s;
+  @media only screen and (min-width: 481px) and (max-width: 1024px) {
+    top: 0;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.3;
+  }
+}
+
+.header-menu-mobile {
+  position: fixed;
+  top: 97px;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  max-width: 100%;
+  background-color: $blue;
+  z-index: 10;
+  margin: 0;
+  list-style-type: none;
+  opacity: 0;
+  @include text-font-14-24;
+  transition: transform 0.3s, opacity 0.3s;
+  transform: translateX(100%);
+  @media only screen and (min-width: 481px) and (max-width: 1024px) {
+    top: 0;
+    width: 320px;
+  }
+  .nav-mobile-item {
+    margin-top: 30px;
+    a {
+      text-decoration: none;
+      color: #87D5FF;
+      &:hover {
+        color: $white;
+      }
+    }
+    .active {
+      color: $white;
+    }
+  }
+  .cancel-btn {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    color: $white;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .nav-mobile {
+    display: block;
+  }
+  .header-menu {
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .header-menu-mobile {
+    width: 100%;
+  }
+  .cancel-btn {
+    position: absolute;
+    top: 20px;
+    right: 30px !important;
+  }
+}

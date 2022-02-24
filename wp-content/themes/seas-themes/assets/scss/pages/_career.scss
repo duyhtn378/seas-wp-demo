@@ -1,0 +1,198 @@
+.career-benifit {
+  width: 1110px;
+  margin: 80px auto 50px;
+  display: flex;
+  align-items: center;
+  .career-img-group {
+    position: relative;
+    width: 539px;
+    height: 373px;
+    .career-img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: auto;
+      z-index: 2;
+    }
+    .career-reg-decor {
+      position: absolute;
+      top: 15px;
+      left: 0;
+      width: 548px;
+      height: 366px;
+      z-index: 1;
+      overflow: hidden;
+      padding: 0;
+      border-radius: 0px 20px;
+      img {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        animation-name: second-decor;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        @keyframes second-decor {
+          0% {
+            transform: translate(0px, 0px);
+          }
+          100% {
+            transform: translate(100px, 100px);
+          }
+        }
+      }
+    }
+  }
+  .career-content {
+    margin-left: 62px;
+    h2 {
+      @include work-sans;
+      font-weight: 700;
+      font-size: 34px;
+      line-height: 40px;
+      letter-spacing: -0.02em;
+      text-transform: uppercase;
+      color: $darkblue;
+      margin-bottom: 18px;
+    }
+    p {
+      @include text-font-16-24;
+      color: $black;
+    }
+  }
+}
+.career-position {
+  h2 {
+    width: 1110px;
+    @include h2-title;
+    text-align: left !important;
+    text-transform: uppercase;
+    margin: 61px auto 18px;
+    @include roboto-slab;
+  }
+}
+@media only screen and (min-width: 400px) and (max-width: 1024px) {
+  .career-benifit {
+    width: calc(100vw-52px);
+  }
+  .career-position {
+    h2 {
+      width: 100%;
+      text-align: center !important;
+    }
+  }
+  .career-content {
+    text-align: center !important;
+    margin: 0 auto !important;
+  }
+}
+.position-group-card {
+  margin: -15px;
+  .position-card {
+    min-width: 330px;
+    // width: calc((100vw-104px)*425/1336);
+    width: 100%;
+    margin: 0;
+    height: auto;
+    background-color: $lightblue;
+    border-radius: 20px 0px;
+    transition: background-color 0.2s;
+    padding: 24px;
+    @include work-sans;
+    h2 {
+      text-align: left !important;
+    }
+    .address-group {
+      width: 100%;
+      display: flex !important;
+    }
+    &:hover {
+      cursor: pointer;
+      background-color: $blue;
+      h2 {
+        color: $white;
+      }
+      .address-group {
+        i {
+          color: $white;
+        }
+        p {
+          color: $white;
+        }
+      }
+      button {
+        background-color: $lightblue;
+      }
+      .career-detail {
+        a {
+          color: $white;
+        }
+        p {
+          color: $white;
+        }
+      }
+    }
+    h2 {
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 23px;
+      letter-spacing: -0.02em;
+      text-transform: uppercase;
+      color: $darkblue;
+      margin-top: 0;
+    }
+    .address-group {
+      margin-top: 8px;
+      p {
+        margin-top: 0;
+        padding-left: 5px;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 20px;
+        color: $black;
+      }
+    }
+    button {
+      background: #87d5ff;
+      border-radius: 4px;
+      border: none;
+      color: $darkblue;
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 20px;
+      padding: 0 18px;
+      margin-right: 10px;
+    }
+    .career-detail {
+      width: 100%;
+      @include d-flex-center-y-b-x;
+      margin-top: 34px;
+      a {
+        text-decoration: none;
+        color: $blue;
+        font-weight: 900;
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        @include roboto-slab;
+        &:hover {
+          color: $green;
+        }
+      }
+      p {
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 20px;
+        color: $grey;
+        margin: 0;
+      }
+    }
+  }
+  @media only screen and (max-width: 479px) {
+    .position-card {
+      width: 100%;
+    }
+  }
+}

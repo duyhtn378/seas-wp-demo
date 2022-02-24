@@ -1,0 +1,59 @@
+.light-blue-background {
+  background: #E7F7FF !important;
+}
+.seas-faqs {
+  width: calc(880 / 1366 * 100vw);
+  margin: 50px auto;
+  h2 {
+    @include work-sans;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 55px;
+    color: $darkblue;
+  }
+  .drop-box {
+    width: 100%;
+    background: #f3f6f8;
+    border-radius: 8px 0px;
+    margin-top: 12px;
+    .box-show {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      font-size: 24px;
+      flex-wrap: wrap;
+      height: auto;
+      transition: height 0.2s;
+      .box-question {
+        margin: 10px;
+        line-height: 24px;
+        color: $darkblue;
+        font-weight: 700;
+        width: 85%;
+      }
+      button {
+        background-color: transparent;
+        color: $blue;
+        border: none;
+        font-size: 30px;
+        width: 20px;
+        height: 20px;
+        @include d-flex-center-xy;
+        margin: 10px;
+        padding: 5px;
+        &:hover {
+          cursor: pointer;
+        }
+        i {
+          font-size: 15px;
+        }
+      }
+      .box-hiden-content {
+        display: none;
+        line-height: 24px;
+        color: $darkblue;
+        margin: 0px 20px 16px;
+      }
+    }
+  }
+}

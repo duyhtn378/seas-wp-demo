@@ -1,0 +1,172 @@
+.contact-support {
+  width: 1188px;
+  margin: 50px auto;
+  .contact-para {
+    padding: 0 100px 0 30px;
+  }
+  h2 {
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 55px;
+    color: $darkblue;
+    @include work-sans;
+  }
+  p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 36px;
+    letter-spacing: 0.04em;
+    color: $black;
+  }
+  form {
+    flex-wrap: wrap;
+  }
+  .contact-btn {
+    display: flex;
+    justify-content: end;
+    margin: 26px;
+    .btn-clear {
+      background-color: transparent;
+      border: none;
+      border-bottom: 1px solid $blue;
+      color: $blue;
+      padding: 0;
+      height: 20px;
+      margin-top: 12px;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 20px;
+      letter-spacing: 0.04em;
+      &:hover {
+        cursor: pointer;
+        color: $green;
+        border-bottom: 1px solid $green;
+      }
+    }
+    .btn-submit {
+      width: 202px;
+      height: 44px;
+      background: $blue;
+      border-radius: 12px 0px;
+      border: none;
+      color: $white;
+      margin-left: 20px;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 20px;
+      letter-spacing: 0.04em;
+      transition: 0.3s;
+      &:hover {
+        cursor: pointer;
+        background-color: $white;
+        color: $blue;
+        outline: 1px solid $blue;
+      }
+    }
+  }
+  .contact-input {
+    display: flex;
+    flex-direction: column;
+    padding-right: 26px;
+    input {
+      border: 0.75px solid #cacdd4;
+      border-radius: 8px;
+      width: 100%;
+      height: 48px;
+      text-indent: 10px;
+      margin-right: 26px;
+      font-size: 14px;
+      line-height: 24px;
+      letter-spacing: 0.04em;
+      font-family: "Montserrat";
+      &::placeholder {
+        color: $grey;
+      }
+      &:focus,
+      :valid {
+        outline: 2px solid $blue;
+      }
+    }
+    label {
+      margin: 10px 0;
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 20px;
+      @include work-sans;
+      color: $black;
+    }
+    textarea {
+      resize: none;
+      border: 0.75px solid #cacdd4;
+      border-radius: 8px;
+      width: 100%;
+      height: 100px;
+      margin-right: 26px;
+      padding: 10px;
+      font-family: "Montserrat";
+      font-size: 14px;
+      line-height: 24px;
+      letter-spacing: 0.04em;
+      &::placeholder {
+        color: $grey;
+      }
+      &:focus,
+      :valid {
+        outline: 2px solid $blue;
+      }
+    }
+  }
+  .contact-group {
+    width: 1188px;
+    height: 140px;
+    background: linear-gradient(88.09deg, #e7f7ff 16.41%, #f5fbff 82.5%);
+    border: 1px solid #87d5ff;
+    border-radius: 40px 0px;
+    padding: 51px 40px;
+    @include d-flex-center-y-b-x;
+    .contact-item {
+      display: flex;
+      height: 32px;
+      img {
+        width: 32px;
+        height: 32px;
+      }
+      div {
+        margin-left: 13px;
+        h3 {
+          margin: 0;
+          text-align: left;
+          font-weight: normal;
+          font-size: 12px;
+          line-height: 15px;
+          letter-spacing: 0.04em;
+          text-transform: uppercase;
+          color: #00a6ff;
+        }
+        p {
+          margin-top: 2px;
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 20px;
+          letter-spacing: 0.04em;
+          color: $darkblue;
+        }
+      }
+    }
+  }
+  form {
+    margin-top: 28.22px;
+  }
+}
+.contact-map {
+  width: calc(100vw - 104px);
+  margin: 0 auto;
+  #map {
+    width: 100%;
+    height: calc((100vw - 104px) * 520 / 1336);
+  }
+  iframe {
+    width: 100%;
+    height: calc((100vw - 104px) * 450 / 1336);
+  }
+}

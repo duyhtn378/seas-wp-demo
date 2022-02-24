@@ -1,0 +1,67 @@
+.seas-services {
+  margin: 50px auto;
+  width: calc(100vw-104px);
+  max-width: 1336px;
+  height: auto;
+  background: #f1faff;
+  border-radius: 40px 0px;
+  h2 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0.04em;
+    color: $darkblue;
+    padding: 40px 0 20px;
+    margin: 0 115px 20px;
+    border-bottom: 1px solid #87d5ff;
+  }
+  ul {
+    @include text-font-14-24;
+    font-weight: 500;
+    color: $black;
+    list-style-type: none;
+    padding: 0 0 30px 0;
+    margin: 14px 115px 0 115px;
+    li {
+      margin: 10px 0;
+      &:before {
+        content: "•";
+        font-size: 15px;
+        vertical-align: top;
+        padding-right: 7px;
+      }
+    }
+  }
+}
+.seas-breakcrumb {
+  margin: 30px auto;
+  width: calc(100vw - 104px);
+  @include roboto-slab;
+  font-weight: 900;
+  font-size: 18px;
+  letter-spacing: 0.02em;
+  a {
+    text-decoration: none;
+    line-height: 32px;
+    color: $blue;
+  }
+  ul {
+    text-align: center;
+    @include d-flex-center-xy;
+    list-style-type: none;
+    li {
+      margin: 0 15px;
+      text-transform: uppercase;
+      line-height: 20px;
+      text-align: center;
+      color: $darkblue;
+      &:before {
+        content: "•";
+        font-size: 15px;
+        vertical-align: top;
+        padding-right: 14px;
+        color: #87d5ff;
+      }
+    }
+  }
+}

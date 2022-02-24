@@ -1,0 +1,39 @@
+/* =======================================
+ * COLOR
+ /* ======================================= */
+$white: #fff;
+$black: #494D56;
+$txt-color: #3b3f3e;
+$green: #38BFA7;
+$yellow: #fff200;
+$red: #ee283b;
+$blue:#0084CB;
+$lightblue:#E7F7FF;
+$darkblue:#00456A;
+$semiblack:#051E2C;
+$semiblue:#0083CA;
+$grey: #B8BBC1;
+
+/* =======================================
+  * OTHERS
+  /* ======================================= */
+
+/* =======================================
+  * RESPONSIVE MARK
+  /* ======================================= */
+
+$information-lg-screen: "only screen and (max-width : 1920px)";
+$information-md-screen: "only screen and (max-width : 1680px)";
+$information-sm-screen: "only screen and (max-width : 1440px)";
+$information-laptop: "only screen and (max-width : 1368px)";
+$information-sm-laptop: "only screen and (max-width : 1280px)";
+$information-lg-tablet: "only screen and (max-width : 1080px)";
+$information-tablet: "only screen and (max-width : 768px)";
+$information-lg-phone: "only screen and (max-width : 668px)";
+$information-phone: "only screen and (max-width : 480px)";
+$information-sm-phone: "only screen and (max-width : 376px)";
+$information-lg-tablet: "only screen and (max-width : 1024px)";
+
+/* USAGE */
+@media #{$information-sm-laptop} {
+}

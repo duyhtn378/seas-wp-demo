@@ -1,0 +1,67 @@
+.news-button {
+  margin-top: 30px;
+  button {
+    background: $lightblue !important;
+    border-radius: 12px 0px !important;
+    color: $blue !important;
+    &:hover {
+      background: $blue !important;
+      color: $white !important;
+    }
+  }
+}
+.news-img {
+  border-radius: 0px 16px !important;
+}
+.pagination {
+  width: 240px;
+  margin: 50px auto;
+  @include d-flex-center-y-b-x;
+  font-weight: 700;
+  .arrow {
+    background-color: $darkblue;
+    border-radius: 8px 0px;
+    width: 40px;
+    height: 40px;
+    @include d-flex-center-xy;
+    .right-arrow {
+      width: 10px;
+      height: 10px;
+      border-top: 4px solid $white;
+      border-right: 4px solid $white;
+      transform: rotate(45deg);
+    }
+    .left-arrow {
+      width: 10px;
+      height: 10px;
+      border-top: 4px solid $white;
+      border-left: 4px solid $white;
+      transform: rotate(-45deg);
+    }
+  }
+  .unit {
+    background-color: $blue;
+    border-radius: 8px 0px;
+    color: $white;
+    width: 40px;
+    height: 40px;
+    @include d-flex-center-xy;
+  }
+  .pick {
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+.news-card-text {
+  font-weight: 700 !important;
+  margin-top: 0 !important;
+}
+.card-day {
+  color: $grey;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15px;
+  @include work-sans;
+  margin-bottom: 0;
+}

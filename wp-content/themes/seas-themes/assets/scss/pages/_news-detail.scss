@@ -1,0 +1,37 @@
+.news-detail-post {
+  width: 880px;
+  margin: 100px auto 20px;
+  @include d-flex-column;
+  h2 {
+    @include text-font-34-48;
+    font-weight: 700;
+    color: $blue;
+    margin: 0;
+    @include work-sans;
+    text-align: center;
+  }
+  .author {
+    @include text-font-14-22;
+    color: $blue;
+    font-weight: 400;
+  }
+  .detail-main-content {
+    width: 100%;
+    @include text-font-14-24;
+    color: $semiblack;
+    font-weight: 500;
+    .row-group {
+      margin: 0 -15px;
+      .col-content {
+        padding: 0 15px;
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+  }
+  .content-list-point {
+    padding-left: 25px;
+  }
+}

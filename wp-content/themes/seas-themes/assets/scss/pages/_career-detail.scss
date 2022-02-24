@@ -1,0 +1,115 @@
+.career-detail-post {
+  text-align: left;
+  margin-top: 130px !important;
+  color: $darkblue;
+  a {
+    text-decoration: none;
+    @include text-font-14-24;
+    &:hover {
+      color: $green;
+      cursor: pointer;
+    }
+  }
+  h1 {
+    font-size: 48px;
+    line-height: 56px;
+    letter-spacing: -0.02em;
+    @include work-sans;
+    text-transform: uppercase;
+    margin: 8px 0 0;
+  }
+  h1 ~ p {
+    @include text-font-14-24;
+    color: $grey;
+    margin: 0 0 28px;
+  }
+  .apply-job-area {
+    margin: 0 -15px;
+    .description-area {
+      border-radius: 40px 0px;
+      background: #f8f8f8;
+      height: 696px;
+      padding: 36px 32px;
+      @include text-font-14-24;
+      color: $darkblue;
+      h2 {
+        font-weight: 400;
+        @include text-font-14-24;
+      }
+      p {
+        font-weight: 700;
+      }
+      ul {
+        padding-left: 30px;
+      }
+    }
+    .apply-area {
+      border-radius: 24px 0px;
+      background: #f8f8f8;
+      height: 696px;
+      @include work-sans;
+      padding: 36px 20px 36px;
+      h2 {
+        @include text-font-34-55;
+        margin: 0;
+      }
+      // .form-group {
+      //   display: flex;
+      //   fle
+      //   justify-content: flex-start !important;
+      // }
+      label {
+        width: 100%;
+        font-size: 13px;
+        line-height: 20px;
+        font-weight: 400;
+        color: $black;
+      }
+      input, select {
+        width: 100%;
+        border-radius: 8px;
+        border: 0.75px solid #CACDD4;
+        height: 48px;
+        margin: 4px 0 14px;
+        background-color: $white;
+        padding-left: 20px;
+        &::placeholder {
+          color: $grey;
+        }
+        &::-webkit-file-upload-button {
+          margin-top: 10px;
+        }
+      }
+      select {
+        padding-left: 15px !important;
+      }
+      p {
+        font-size: 10px;
+        line-height: 20px;
+        color: $grey;
+      }
+      input[type=file] ~ p {
+        margin: 0 0 45px;
+      }
+    }
+    .form-control {
+      padding: 0 15px;
+      button {
+        width: 100%;
+        height: 44px;
+        color: $white;
+        background-color: $blue;
+        @include text-font-14-22;
+        border-radius: 12px 0px;
+        border: none;
+        transition: all 0.3s;
+        &:hover {
+          color: $blue;
+          outline: 2px solid $blue;
+          background-color: $white;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

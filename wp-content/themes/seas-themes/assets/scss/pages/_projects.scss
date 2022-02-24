@@ -1,0 +1,176 @@
+.seas-all-project {
+  @include d-flex-column;
+  .project-title {
+    @include d-flex-center-xy;
+    margin-top: 64px;
+
+    //use for project-detail page
+    h2 {
+      @include text-font-34-55;
+      font-weight: 700;
+      color: $darkblue;
+      margin: 0;
+      @include work-sans;
+    }
+    .page-pagination {
+      .left-item {
+        border-radius: 8px 0px 0px 0px;
+      }
+      .right-item {
+        border-radius: 0px 0px 8px 0px;
+      }
+      .right-item,.left-item {
+        background: $lightblue;
+        width: 40px;
+        height: 40px;
+        margin-left: 16px;
+        &:hover {
+          cursor: pointer;
+          background-color: #87D5FF;
+        }
+      }
+      .arrow {
+        border-radius: 8px 0px;
+        width: 40px;
+        height: 40px;
+        @include d-flex-center-xy;
+        .right-arrow {
+          width: 10px;
+          height: 10px;
+          border-top: 2px solid $blue;
+          border-right: 2px solid $blue;
+          transform: rotate(45deg);
+        }
+        .left-arrow {
+          width: 10px;
+          height: 10px;
+          border-top: 2px solid $blue;
+          border-left: 2px solid $blue;
+          transform: rotate(-45deg);
+        }
+      }
+    }
+    //use for project-detail page
+
+    button {
+      color: $black;
+      border: none;
+      background-color: $white;
+      padding: 8px 20px;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 22px;
+      text-align: center;
+      letter-spacing: 0.04em;
+      margin: 0px 10px;
+      transition: 0.1s;
+      border-radius: 16px 0px;
+      &:hover {
+        color: $white;
+        background-color: $green;
+        cursor: pointer;
+      }
+    }
+  }
+  .project-area {
+    padding-top: 30px;
+    .project-group {
+      margin: 0 -15px;
+      padding: 15px 0;
+      .main-banner {
+        padding: 0 15px;
+        // height: auto;
+        max-height: 520px;
+        img,
+        .main-banner-content {
+          width: 100%;
+        }
+        .main-banner-content {
+          height: 150px;
+          background-color: #f8fafb;
+          border-radius: 0px 0px 40px 0px;
+          padding: 24px;
+          h2 {
+            margin: 0 0 8px;
+            @include text-font-16-24;
+            color: $darkblue;
+            font-weight: 700;
+          }
+          p {
+            margin-top: 0;
+            @include text-font-14-22;
+            color: $darkblue;
+            font-weight: 500;
+          }
+          a {
+            text-decoration: none;
+            @include text-font-14-24;
+            color: $blue;
+            font-weight: 700;
+            &:hover {
+              color: $green;
+            }
+          }
+        }
+        img {
+          height: auto;
+          min-height: 370px;
+        }
+      }
+      .sub-banner {
+        padding: 0 15px;
+        .sub-banner-1 {
+          padding-bottom: 15px;
+          .sub-banner-content {
+            border-radius: 24px 0px 0px 0px;
+          }
+          .sub-banner-content-row-2-3 {
+            border-radius: 0px 0px 24px 0px;
+          }
+          .left-side {
+            min-height: 275px;
+          }
+        }
+        .sub-banner-2 {
+          padding-top: 15px;
+          .sub-banner-content {
+            border-radius: 0px 0px 24px 0px;
+          }
+          .sub-banner-content-row-2-3 {
+            border-radius: 24px 0px 0px 0px;
+          }
+          .right-side {
+            min-height: 275px;
+          }
+        }
+        .sub-banner-content,
+        .sub-banner-content-row-2-3 {
+          height: 245px;
+          background-color: #f8fafb;
+          padding: 24px;
+          h2 {
+            margin: 0 0 8px;
+            @include text-font-16-24;
+            color: $darkblue;
+            font-weight: 700;
+          }
+          p {
+            margin-top: 0;
+            @include text-font-14-22;
+            color: $darkblue;
+            font-weight: 500;
+          }
+          a {
+            text-decoration: none;
+            @include text-font-14-24;
+            color: $blue;
+            font-weight: 700;
+            &:hover {
+              color: $green;
+            }
+          }
+        }
+      }
+    }
+  }
+}

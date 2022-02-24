@@ -1,0 +1,303 @@
+// about us head banner
+.about-us-intro-banner {
+  margin-top: 97px;
+  width: 100%;
+  @include d-flex-center-xy;
+  div {
+    width: calc(100vw-104px);
+    height: calc((100vw-104px) * 340 / 1336);
+    @include d-flex-center-xy;
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: auto;
+      z-index: -1;
+    }
+    h1 {
+      position: absolute;
+      font-weight: 900;
+      font-size: 60px;
+      line-height: 72px;
+      @include roboto-slab;
+      color: $white;
+    }
+  }
+}
+
+// about seas section
+.about-seas {
+  margin-top: 79px;
+  @include d-flex-column;
+  .about-seas-describe {
+    width: 1108px;
+    margin: 0 auto;
+    @include d-flex-center-xy;
+    .about-right-side {
+      padding-left: 15px;
+      h2 {
+        @include roboto-slab;
+        @include h2-title;
+        text-transform: uppercase;
+        margin-bottom: 24px;
+        text-align: left;
+      }
+      p {
+        font-weight: 700;
+        @include text-font-16-24;
+        color: $blue;
+      }
+    }
+  }
+  .about-paragraph {
+    @include text-font-14-24;
+    color: $semiblack;
+    margin-top: 40px;
+    padding: 0 280px;
+    max-width: calc(879px + 2*280px);
+  }
+  .about-ending-title {
+    @include h2-title;
+    text-transform: uppercase;
+    color: $blue !important;
+    @include roboto-slab;
+  }
+  @media only screen and (min-width: 400px) and (max-width: 1024px) {
+    .about-paragraph {
+      padding: 0 25px;
+    }
+    .about-seas-describe {
+      @include d-flex-column;
+      flex-direction: column-reverse;
+      width: 100%;
+    }
+  }
+}
+
+// misson section
+.seas-mission {
+  @include d-flex-center-xy;
+  .mission-img {
+    width: calc((100vw-104px) * 512 / 1336);
+    max-width: 512px;
+    h2 {
+      @include h2-title;
+      text-transform: uppercase;
+      text-align: left;
+      margin-top: 0;
+      @include roboto-slab;
+    }
+    img {
+      width: calc((100vw-104px) * 512 / 1336);
+      max-width: 512px;
+      height: auto;
+      margin-bottom: 30px;
+    }
+  }
+  .mission-content {
+    width: calc((100vw-104px) * 824 / 1336);
+    max-width: 824px;
+    height: calc((100vw-104px) * 540 / 1336);
+    max-height: 540px;
+    background-color: $blue;
+    border-radius: 40px 0px;
+    @include d-flex-center-y-b-x;
+    .mission-paragraph {
+      width: calc((100vw-104px) * 412 / 1336);
+      margin-top: 30px;
+      h3 {
+        @include work-sans;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 23px;
+        letter-spacing: -0.02em;
+        color: $white;
+        margin-bottom: 16px;
+        margin-top: 0px;
+      }
+      p {
+        color: $white;
+        @include text-font-14-24;
+        margin-bottom: 40px;
+      }
+    }
+    .left-side {
+      padding-left: 100px;
+    }
+    .right-side {
+      padding-left: 50px;
+    }
+  }
+}
+
+// value section
+.seas-value {
+  width: calc(100vw - 104px);
+  height: 479px;
+  margin: 50px auto;
+  background-color: #f8fafb;
+  border-radius: 40px 0px;
+  @include d-flex-column;
+  h2 {
+    @include h2-title;
+    @include roboto-slab;
+  }
+  .topic-group {
+    width: 652px;
+    height: 96px;
+    background: $blue;
+    border-radius: 20px 0px;
+    margin-bottom: 150px;
+    position: relative;
+    h3 {
+      @include h2-title;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      margin: 0;
+      color: $white;
+      white-space: nowrap;
+      @include roboto-slab;
+      text-transform: uppercase;
+    }
+    p {
+      position: absolute;
+      font-weight: 700;
+      font-size: 34px;
+      line-height: 40px;
+      letter-spacing: -0.02em;
+      text-transform: uppercase;
+      @include work-sans;
+      color: $blue;
+    }
+    .topic-1 {
+      top: -120px;
+      left: 0;
+    }
+    .topic-2 {
+      top: -120px;
+      right: 0;
+    }
+    .topic-3 {
+      top: 0;
+      left: -250px;
+    }
+    .topic-4 {
+      top: 0;
+      right: -220px;
+    }
+    .topic-5 {
+      bottom: -120px;
+      left: -70px;
+    }
+    .topic-6 {
+      bottom: -120px;
+      right: -70px;
+    }
+    .topic-7 {
+      bottom: -120px;
+      left: 45%;
+      transform: translateX(-50%);
+    }
+  }
+}
+
+// vision section
+.seas-vision {
+  @include d-flex-center-y-b-x;
+  .vision-content {
+    width: calc((100vw - 104px) * 516 / 1336);
+    max-width: 516px;
+    transform: translateY(-20px);
+    h2 {
+      @include h2-title;
+      @include roboto-slab;
+      text-transform: uppercase;
+      text-align: left;
+      margin-bottom: 24px;
+    }
+    p {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 28px;
+      letter-spacing: 0.04em;
+      color: $semiblack;
+    }
+  }
+  .vision-design-form {
+    width: calc((100vw - 104px) * 820 / 1336);
+    max-width: 820px;
+    @include d-flex-center-y-b-x;
+    .form-one {
+      position: relative;
+      width: 189px;
+      height: 438px;
+      img {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+      }
+      .lg-1 {
+        z-index: 2;
+      }
+      .md-1 {
+        z-index: 3;
+      }
+      .sm-1 {
+        z-index: 4;
+      }
+    }
+    .form-square {
+      position: relative;
+      width: calc((100vw - 104px) * 615 / 1336);
+      max-width: 615px;
+      height: 438px;
+      border-radius: 0px 24px;
+      background-color: $darkblue;
+      h3 {
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 58px;
+        text-transform: uppercase;
+        color: $white;
+        margin-left: 53px;
+      }
+      div {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        border-radius: 0px 0px 0px 24px;
+        text-transform: uppercase;
+      }
+      .square-2 {
+        height: 235px;
+        z-index: 2;
+        background-color: $blue;
+        p {
+          font-weight: bold;
+          font-size: 38px;
+          line-height: 36px;
+          text-transform: uppercase;
+          color: $white;
+          margin-left: 53px;
+        }
+      }
+      .square-3 {
+        height: 125px;
+        z-index: 3;
+        background-color: #87d5ff;
+        p {
+          font-weight: bold;
+          font-size: 38px;
+          line-height: 44px;
+          text-transform: uppercase;
+          color: $darkblue;
+          margin-left: 53px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,66 @@
+@mixin d-flex-center-xy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@mixin pos-center-xy {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.xxx-banner {
+  width: 100%;
+  height: 70vw;
+  @include d-flex-center-xy;
+  .circle-center {
+    position: absolute;
+    width: 225px;
+    height: 225px;
+    border-radius: 50%;
+    background-color: $blue;
+    @include d-flex-center-xy;
+    z-index: 2;
+    .circle-decor-1 {
+      @include pos-center-xy;
+      width: 252px;
+      height: 252px;
+      background-color: $blue;
+      border-radius: 50%;
+    }
+
+    p {
+      color: $white;
+      text-align: center;
+    }
+
+    .circle-test-1 {
+      position: absolute;
+      left: -200px;
+      bottom: -200px;
+      width: 147px;
+      height: 147px;
+      background-color: $blue;
+      border-radius: 50%;
+      @include d-flex-center-xy;
+      p {
+        color: $white;
+        text-align: center;
+      }
+    }
+    .circle-test-2 {
+      position: absolute;
+      right: -200px;
+      bottom: -200px;
+      width: 147px;
+      height: 147px;
+      background-color: $blue;
+      border-radius: 50%;
+      @include d-flex-center-xy;
+      p {
+        color: $white;
+        text-align: center;
+      }
+    }
+  }
+}

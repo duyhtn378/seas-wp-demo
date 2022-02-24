@@ -1,0 +1,26 @@
+.customer-page {
+  margin-top: 100px !important;
+  background-color: #f0f6f9;
+  border-radius: 0px 40px;
+  .customer-carousel {
+    padding-top: 57px;
+  }
+}
+.customer-logo-group {
+  @include d-flex-center-y-b-x;
+  flex-wrap: wrap;
+  margin-top: 80px;
+  .customer-title {
+    text-align: center;
+    h2 {
+      @include h2-title;
+      @include roboto-slab;
+      margin: 0;
+    }
+    p {
+      text-align: center;
+      color: $black;
+      @include text-font-14-24;
+    }
+  }
+}
